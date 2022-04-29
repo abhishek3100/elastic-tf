@@ -1,0 +1,11 @@
+project_id = "abhishekx"
+region     = "us-central1"
+zone       = "us-central1-a"
+env        = "qa"
+
+instance_name = "qa-elasticsearch"
+machine_type  = "n1-standard-2"
+image         = "ubuntu-os-cloud/ubuntu-2004-lts"
+size          = "10"
+vpc_name      = "default"
+firewall_name = "elasticsearch"
