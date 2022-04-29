@@ -12,9 +12,9 @@ resource "google_compute_instance" "vm_instance" {
 
   network_interface {
     network = data.google_compute_network.vpc_network.self_link
-    # no external IP
-    # access_config {
-    # }
+    # If no external IP required just comment the access_config block
+     access_config {
+     }
   }
   service_account {
     scopes = ["cloud-platform"]
